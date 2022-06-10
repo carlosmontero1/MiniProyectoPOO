@@ -9,6 +9,8 @@ print("Brand: " + motorcycle1.brand)
 print("Color: " + motorcycle1.color)
 print("Year: " + str(motorcycle1.year))
 
+print("Llantas: " + str(motorcycle1.llantas))
+
 # cambiamos el valor del año con el metodo set a un numero que no este incluido en el rango
 
 print("\nYear change")
@@ -21,3 +23,4 @@ motorcycle1.year = 2010
 
 # mostrar el valor modificado del objeto
 print("New Year: \t" + str(motorcycle1.year))
+

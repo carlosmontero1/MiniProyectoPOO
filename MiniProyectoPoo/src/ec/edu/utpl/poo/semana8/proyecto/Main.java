@@ -12,6 +12,8 @@ public class Main {
         System.out.println("Color: " + motorcycle1.getColor());
         System.out.println("Year: " + motorcycle1.getYear());
 
+        System.out.println("Llantas: " + motorcycle1.llantas);
+
         // cambiamos el valor del año con el metodo set a un numero que no este incluido en el rango
 
         System.out.println("\nYear change");
@@ -25,6 +27,6 @@ public class Main {
 
         // mostrar el valor modificado del objeto
         System.out.println("New Year: \t" + motorcycle1.getYear());
-
+        
     }
 }

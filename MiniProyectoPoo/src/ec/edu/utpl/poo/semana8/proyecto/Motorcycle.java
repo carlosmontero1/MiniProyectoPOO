@@ -2,8 +2,10 @@ package ec.edu.utpl.poo.semana8.proyecto;
 import java.time.LocalDate;
 public class Motorcycle {
 
-    // atributos
+    // atributo de clase
+    static int llantas = 2;
 
+    // atributos de instancia
     private String brand;
     private String color;
     private int year;
@@ -29,6 +31,15 @@ public class Motorcycle {
     public Motorcycle(String brand, String color) {
         this.brand = brand;
         this.color = color;
+    }
+
+    public Motorcycle(String color, int year) {
+        this.color = color;
+        this.year = year;
+    }
+
+    public Motorcycle(int year) {
+        this.year = year;
     }
 
     // metodos

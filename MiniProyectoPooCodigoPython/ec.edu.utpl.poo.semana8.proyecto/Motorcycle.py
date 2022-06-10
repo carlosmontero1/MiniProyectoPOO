@@ -1,8 +1,13 @@
 # importamos date de datetime para obtener el año en que estamos para que el año de la moto no sea mayor al actual
 from datetime import date
 
+# creamos la clase Motorcycle
 class Motorcycle:
 
+# atributo de clase
+    llantas = 2
+
+    # constructor
     def __init__(self, brand, color, year):
         self.__brand = brand
         self.__color = color
@@ -10,6 +15,9 @@ class Motorcycle:
             self.__year = year
         else :
             raise Exception("El año de la motocycleta no puede ser antes de 1885 o mayor a este año")
+
+# Se utiliza @property para simular un getter
+# Se utiliza @ nombre de la variable .setter para simular un setter
 
     @property
     def brand (self):
@@ -37,4 +45,3 @@ class Motorcycle:
             self.__year = y
         else :
             raise Exception("El año de la motocycleta no puede ser antes de 1885 o mayor a este año")
-
